@@ -8,4 +8,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/NDE_fade.unity
+    guid: 6eb563957186b4353a0f48cc82f4ecfc
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: 7398d8e9eb4e846daa8757bf0bf0ee09
+  - enabled: 1
+    path: Assets/Scenes/Scene 2.unity
+    guid: 2ce2d02830ab2de409b4423563585875
+  - enabled: 1
+    path: Assets/Scenes/Scene 3.unity
+    guid: 40e0d2bc2689c5343b708f8ec31ab75c
+  - enabled: 1
+    path: Assets/Scenes/Scene 4.unity
+    guid: 8c9a2b7d22695d3479793bca5207f717
+  - enabled: 1
+    path: Assets/Scenes/Scene 5.unity
+    guid: bdeefd89a9972174ebe0a715eca73759
+  - enabled: 1
+    path: Assets/Scenes/Scene 6.unity
+    guid: 2c15052052fca45429ccbbb4a170ee83
   m_configObjects: {}
