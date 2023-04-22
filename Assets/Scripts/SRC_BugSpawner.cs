@@ -70,16 +70,6 @@ public class SRC_BugSpawner : MonoBehaviour
         Quaternion parentRot = Quaternion.FromToRotation(Vector3.up, gameArea.transform.position - position);
         GameObject newBug = Instantiate(bug, position, parentRot, gameObject.transform);
 
-        int randInt = UnityEngine.Random.Range(0, 100);
-        if (randInt >= 0 && randInt < 5)
-        {
-            GameObject newDialog = Instantiate(bugRandomText, newBug.transform);
-            newDialog.SetActive(true);
-            newDialog.transform.rotation = Quaternion.Euler(0f, 0f, -parentRot.z);
-            newDialog.transform.position = newBug.transform.position + new Vector3(-4.5f, 0.5f, 0f);
-            newDialog.GetComponentInChildren<TextMeshPro>().text = lines[randInt];
-        }
-
         SRC_Bug bugScript = newBug.GetComponent<SRC_Bug>();
         bugScript.bugSpawner = this;
         bugScript.gameArea = gameArea;
