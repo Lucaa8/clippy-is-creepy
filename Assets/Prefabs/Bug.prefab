@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5802470973927872359}
   - component: {fileID: 5802470973927872356}
   - component: {fileID: 5802470973927872358}
+  - component: {fileID: 6460815959473056317}
+  - component: {fileID: -5042623148959386277}
   m_Layer: 0
   m_Name: Bug
   m_TagString: Untagged
@@ -100,3 +102,41 @@ MonoBehaviour:
   bugSpawner: {fileID: 0}
   gameArea: {fileID: 0}
   speed: 0
+--- !u!61 &6460815959473056317
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802470973927872357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.21133333}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &-5042623148959386277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802470973927872357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedfe55ec9cc533479b593e72b1b27c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
