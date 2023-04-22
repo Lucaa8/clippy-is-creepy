@@ -1,14 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SRC_BugSpawner : MonoBehaviour
 {
     public GameObject bug;
-    private List<GameObject> bugList = new List<GameObject>();
-
     public GameObject gameArea;
+    public GameObject bugRandomText;
 
     public int bugCount = 0;
     public int bugLimit = 500;
@@ -60,7 +60,17 @@ public class SRC_BugSpawner : MonoBehaviour
         GameObject newBug = Instantiate(
             bug,
             position,
-            Quaternion.FromToRotation(Vector3.up, (gameArea.transform.position - position)), gameObject.transform);
+            Quaternion.FromToRotation(Vector3.up, (gameArea.transform.position - position)), gameObject.transform
+            );
+
+        int randInt = UnityEngine.Random.Range(0, 100);
+        if (randInt >= 0 && randInt <= 5)
+        {
+            Instantiate(bugRandomText, newBug.transform);
+            bugRandomText.SetActive(true);
+            bugRandomText.transform.rotation.SetLookRotation(Vector3.up);
+            bugRandomText.GetComponent<TextMeshPro>().text = "nope";
+        }
 
         SRC_Bug bugScript = newBug.GetComponent<SRC_Bug>();
         bugScript.bugSpawner = this;
