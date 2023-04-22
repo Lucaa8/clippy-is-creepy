@@ -427,7 +427,7 @@ MonoBehaviour:
   m_text: 500 restants
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -516,7 +516,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
   m_text: "W-A-S-D pour te d\xE9placer<br>Clique-gauche pour tirer<br>Tue-les tous!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -895,7 +895,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1309,6 +1309,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7126508848981362208, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac05fd6593adcb34a9ef6cc3db2b33f9, type: 3}
     - target: {fileID: 7126508848981362209, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1357,5 +1361,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7126508848981362211, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126508848981362214, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2050641231}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
