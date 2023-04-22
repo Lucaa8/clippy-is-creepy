@@ -42,6 +42,7 @@ public class GlobalScript : MonoBehaviour
     IEnumerator sleep1()
     {
         yield return new WaitForSeconds(1);
-        Debug.Log("test");
+
+	    GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
     }
 }
