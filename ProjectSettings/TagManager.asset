@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: In front
+    uniqueID: 1512820233
+    locked: 0
