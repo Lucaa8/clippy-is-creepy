@@ -71,6 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-/Assets/Scenes/LDC.*
-/Assets/Scenes/NDE.*
-/Assets/Scenes/AGR.*
+/Assets/Scenes/LDC_*
+/Assets/Scenes/NDE_*
+/Assets/Scenes/AGR_*
