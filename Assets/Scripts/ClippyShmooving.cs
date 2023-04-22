@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ClippyShmooving : MonoBehaviour
@@ -17,12 +19,26 @@ public class ClippyShmooving : MonoBehaviour
 
     public bool hasBeenDefeated = false;
     public int PV;
+    private int pvmax;
+
+    public GameObject dialog;
+    public GameObject healthText;
+
+    private int currentLine = 0;
+    private string[] lines = { 
+        "Vous ne pourrez pas m'arrêter",
+        "Je reviendrais et me vengerais",
+        "Arrrgh...",
+        "Vous faîtes une grave erreur",
+        "Nous nous reverrons."
+    };
 
     void Start()
      {
         xPos = Random.Range(-3.1f, 3.1f);
         yPos = Random.Range(-3.1f, 3.1f);
         desiredPos = new Vector3(xPos, yPos, transform.position.z);
+        pvmax = PV;
      }
 
     void Update()
@@ -50,17 +66,16 @@ public class ClippyShmooving : MonoBehaviour
         if(PV > 0)
         {
             PV--;
+            healthText.GetComponentInChildren<TextMeshPro>().text = (pvmax - PV) + "/" + pvmax;
+            if(PV%2==0)
+            {
+                dialog.GetComponentInChildren<TextMeshPro>().text = lines[currentLine++];
+            }
         }
         else
         {
-            Debug.Log("Clippy has been defeated");
             hasBeenDefeated = true;
             gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-
-            //ICI IL FAUT CHANGER DE SCENE NINI MON PETIT CHOU ADORE
-            //(nohomo)
-            // merci mon loulou
-
 		    GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
         }
     }
