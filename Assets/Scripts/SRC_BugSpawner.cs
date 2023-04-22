@@ -11,14 +11,23 @@ public class SRC_BugSpawner : MonoBehaviour
     public GameObject bugRandomText;
 
     public int bugCount = 0;
-    public int bugLimit = 500;
+    public int bugLimit;
     public int bugPerFrame = 1;
 
-    public float spawnCircleRadius = 150.0f;
-    public float deathCircleRadius = 160.0f;
+    public float spawnCircleRadius;
+    public float deathCircleRadius;
 
-    public float fastestSpeed = 20.0f;
-    public float slowestSpeed = 1.0f;
+    public float fastestSpeed;
+    public float slowestSpeed;
+
+    public bool spawn = true;
+
+    private string[] lines = {  "Ne faîtes pas ça!",
+                                "Vous ne devriez pas faire ça!",
+                                "Ne l'aidez surtout pas!",
+                                "Clippy n'est pas si gentil!",
+                                "Vous faîtes une grave erreur!"
+                              };
 
     void Start()
     {
@@ -28,7 +37,8 @@ public class SRC_BugSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MaintainBugPopulation();
+        if(spawn)
+            MaintainBugPopulation();
     }
 
     void MaintainBugPopulation()
@@ -57,19 +67,17 @@ public class SRC_BugSpawner : MonoBehaviour
     SRC_Bug AddBug(Vector3 position)
     {
         bugCount++;
-        GameObject newBug = Instantiate(
-            bug,
-            position,
-            Quaternion.FromToRotation(Vector3.up, (gameArea.transform.position - position)), gameObject.transform
-            );
+        Quaternion parentRot = Quaternion.FromToRotation(Vector3.up, gameArea.transform.position - position);
+        GameObject newBug = Instantiate(bug, position, parentRot, gameObject.transform);
 
         int randInt = UnityEngine.Random.Range(0, 100);
-        if (randInt >= 0 && randInt <= 5)
+        if (randInt >= 0 && randInt < 5)
         {
-            Instantiate(bugRandomText, newBug.transform);
-            bugRandomText.SetActive(true);
-            bugRandomText.transform.rotation.SetLookRotation(Vector3.up);
-            bugRandomText.GetComponent<TextMeshPro>().text = "nope";
+            GameObject newDialog = Instantiate(bugRandomText, newBug.transform);
+            newDialog.SetActive(true);
+            newDialog.transform.rotation = Quaternion.Euler(0f, 0f, -parentRot.z);
+            newDialog.transform.position = newBug.transform.position + new Vector3(-4.5f, 0.5f, 0f);
+            newDialog.GetComponentInChildren<TextMeshPro>().text = lines[randInt];
         }
 
         SRC_Bug bugScript = newBug.GetComponent<SRC_Bug>();
