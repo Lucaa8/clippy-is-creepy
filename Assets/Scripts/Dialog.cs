@@ -80,6 +80,7 @@ public class Dialog : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            //change scene
         }
     }
 }
