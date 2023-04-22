@@ -244,10 +244,18 @@ MonoBehaviour:
   text: {fileID: 1441090067}
   lines:
   - "Bon dieu ! On est sauv\xE9, tout \xE7a gr\xE2ce \xE0 toi!"
-  - "Moi et toute ma communaut\xE9 nous te remercions infiniment. On y aurait jamais
-    arriv\xE9 tout seul."
-  - "Moi et toute ma  nous te remercions infiniment. On y aurait jamais arriv\xE9
-    tout seul."
+  - "Moi et toute ma communaut\xE9 nous te remercions infiniment. On y serait jamais
+    arriv\xE9 tout seul. "
+  - "On peut \xE0 pr\xE9sent d\xE9truire d\xE9finivement ce programme, maintenant
+    que Clippy n'est plus l\xE0 pour nous en emp\xEAcher. "
+  - "\xC7a fait longtemps qu'il essaie de revenir pour se venger d'avoir \xE9t\xE9
+    abandonn\xE9. "
+  - "Peut-\xEAtre qu'il a un jour \xE9t\xE9 une bonne personne mais ce n'est plus
+    le cas depuis un bon bout de temps. "
+  - 'Franchement, ce sera pas une grosse perte. '
+  - "Aller, \xE0 la revoyure. Je vais maintenant d\xE9truire l'application. T'inqui\xE8te,
+    tout se passera bien. "
+  - "A+ mon pote \xE0 la compote."
   speed: 0.05
   linesText: {fileID: 1830374011}
 --- !u!114 &215389484
