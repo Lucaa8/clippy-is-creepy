@@ -79,8 +79,8 @@ public class Dialog : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
-            //change scene
+            // change scene
+            GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
         }
     }
 }

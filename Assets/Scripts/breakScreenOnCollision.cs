@@ -37,9 +37,16 @@ public class breakScreenOnCollision : MonoBehaviour
                     bubble.SetActive(true);
                     text.gameObject.SetActive(true);
                     shown = true;
+                    StartCoroutine(waitAndSwitchScene());
                 }
             }
         }
+    }
+
+    public IEnumerator waitAndSwitchScene()
+    {
+        yield return new WaitForSeconds(3);
+        GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

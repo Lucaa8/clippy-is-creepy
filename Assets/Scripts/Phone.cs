@@ -85,7 +85,9 @@ public class Phone : MonoBehaviour
             }
             if(currentNumber == fullNumber.Length)
             {
-                //TRANSITIONNNN
+                is_glitching = true;
+                //change scene
+			    GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
             }
         }
         else

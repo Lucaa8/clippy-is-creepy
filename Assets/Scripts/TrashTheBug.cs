@@ -61,7 +61,7 @@ public class TrashTheBug : MonoBehaviour
                 shake = false;
                 spawner.spawn = false;
                 clippy = true;
-                clippyobject.GetComponentInChildren<TextMeshPro>().text = "WOW! Il y a beaucoup trop de bugs pour les supprimer!!<br>Je n'avais pas prévu cela...";
+                clippyobject.GetComponentInChildren<TextMeshPro>().text = "WOW! Il y a beaucoup trop de bugs pour les supprimer!!<br>Je n'avais pas prï¿½vu cela...";
             }
         }
     }
@@ -98,5 +98,7 @@ public class TrashTheBug : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
         }
         //transition !!!
+
+	    GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
     }
 }
