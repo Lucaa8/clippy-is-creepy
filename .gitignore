@@ -74,3 +74,6 @@ crashlytics-build.properties
 /Assets/Scenes/LDC_*
 /Assets/Scenes/NDE_*
 /Assets/Scenes/AGR_*
+
+Assets/Fonts/Krungthep\ SDF.asset
+/Assets/Fonts/AmaticSC-Regular\ SDF.asset
