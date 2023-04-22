@@ -25,8 +25,7 @@ public class SRC_Bug : MonoBehaviour
             RemoveBug();
 
     }
-
-    void RemoveBug()
+    public void RemoveBug()
     {
         Destroy(gameObject);
         bugSpawner.bugCount--;
