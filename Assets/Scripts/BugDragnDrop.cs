@@ -7,7 +7,6 @@ public class BugDragnDrop : MonoBehaviour
     private bool isDragged = false;
     private Vector3 offset;
 
-
     void Update()
     {
         if (isDragged)
@@ -18,12 +17,16 @@ public class BugDragnDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
+        this.tag = "IsDragged";
+
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         isDragged = true;
     }
 
     private void OnMouseUp()
     {
+        this.tag = "Bug";
+
         isDragged = false;
     }
 }
