@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &46541387
+--- !u!1001 &7942384
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5079295139321450904, guid: a41a5e6f84acb47f1980d15c9aad15d7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5079295139321450904, guid: a41a5e6f84acb47f1980d15c9aad15d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -180,12 +180,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5079295139321450907, guid: a41a5e6f84acb47f1980d15c9aad15d7, type: 3}
       propertyPath: nextScene
-      value: Scene 8
+      value: Scene Finale
       objectReference: {fileID: 0}
     - target: {fileID: 5079295139321450907, guid: a41a5e6f84acb47f1980d15c9aad15d7, type: 3}
       propertyPath: blackSquare
       value: 
-      objectReference: {fileID: 1361764543}
+      objectReference: {fileID: 1428272242}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a41a5e6f84acb47f1980d15c9aad15d7, type: 3}
 --- !u!1 &215389481
@@ -243,13 +243,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1441090067}
   lines:
-  - "Ah enfin je peux te contacter... J'ai essay\xE9 lors de ton appel \xE0 Carglass
-    mais le r\xE9seau n'\xE9tais pas suffisant"
-  - "Tu dois savoir que clippy n'est pas celui qu'il pr\xE9tend \xEAtre."
-  - "Il veut que tu r\xE9pares et retire tous les bugs de son \"jeu\"..."
-  - "Mais en r\xE9alit\xE9 il essaie de lancer un super mega virus et tu as failli
-    l'aider en r\xE9parant le \"jeu\""
-  - "Je te laisse le d\xE9masquer par toi-m\xEAme..."
+  - "Bon dieu ! On est sauv\xE9, tout \xE7a gr\xE2ce \xE0 toi!"
+  - "Moi et toute ma communaut\xE9 nous te remercions infiniment. On y aurait jamais
+    arriv\xE9 tout seul."
+  - "Moi et toute ma  nous te remercions infiniment. On y aurait jamais arriv\xE9
+    tout seul."
   speed: 0.05
   linesText: {fileID: 1830374011}
 --- !u!114 &215389484
@@ -620,7 +618,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1361764542
+--- !u!1001 &1428272241
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -641,7 +639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503244196681585063, guid: e5e39645af0e84786a607ddc15362017, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1503244196681585063, guid: e5e39645af0e84786a607ddc15362017, type: 3}
       propertyPath: m_AnchorMax.x
@@ -717,10 +715,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5e39645af0e84786a607ddc15362017, type: 3}
---- !u!1 &1361764543 stripped
+--- !u!1 &1428272242 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1503244196268038711, guid: e5e39645af0e84786a607ddc15362017, type: 3}
-  m_PrefabInstance: {fileID: 1361764542}
+  m_PrefabInstance: {fileID: 1428272241}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441090065
 GameObject:

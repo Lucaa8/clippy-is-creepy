@@ -59,6 +59,9 @@ public class ClippyShmooving : MonoBehaviour
 
             //ICI IL FAUT CHANGER DE SCENE NINI MON PETIT CHOU ADORE
             //(nohomo)
+            // merci mon loulou
+
+		    GameObject.Find("gameManager").GetComponent<sceneSwitcher>().FadeOut();
         }
     }
 }
