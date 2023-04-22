@@ -269,7 +269,7 @@ MonoBehaviour:
     en les mettant dans la poubelle."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -358,7 +358,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_text: template
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -733,7 +733,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_text: ?/?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1102,7 +1102,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1184,6 +1184,7 @@ MonoBehaviour:
   fastestSpeed: 4
   slowestSpeed: 2
   spawn: 1
+  bullshitAllanPrefab: 1
 --- !u!4 &1508029249
 Transform:
   m_ObjectHideFlags: 0

@@ -427,7 +427,7 @@ MonoBehaviour:
   m_text: 500 restants
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -516,7 +516,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
   m_text: "W-A-S-D pour te d\xE9placer<br>Clique-gauche pour tirer<br>Tue-les tous!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -895,7 +895,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1231,6 +1231,10 @@ PrefabInstance:
       propertyPath: gameArea
       value: 
       objectReference: {fileID: 1379829071}
+    - target: {fileID: 4527310484017644915, guid: 4ce0089e252f7ea4d8c4bd4f37e91d41, type: 3}
+      propertyPath: bullshitAllanPrefab
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce0089e252f7ea4d8c4bd4f37e91d41, type: 3}
 --- !u!1001 &5712532766846084852
@@ -1319,11 +1323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7126508848981362209, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.77
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 7126508848981362209, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7126508848981362209, guid: e2ab5dffaf8f9c84fae228541912e567, type: 3}
       propertyPath: m_LocalPosition.z

@@ -22,6 +22,8 @@ public class SRC_BugSpawner : MonoBehaviour
 
     public bool spawn = true;
 
+    public bool bullshitAllanPrefab;
+
     private string[] lines = {  "Ne faîtes pas ça!",
                                 "Vous ne devriez pas faire ça!",
                                 "Ne l'aidez surtout pas!",
@@ -69,6 +71,19 @@ public class SRC_BugSpawner : MonoBehaviour
         bugCount++;
         Quaternion parentRot = Quaternion.FromToRotation(Vector3.up, gameArea.transform.position - position);
         GameObject newBug = Instantiate(bug, position, parentRot, gameObject.transform);
+
+        if(bullshitAllanPrefab)
+        {
+            int randInt = UnityEngine.Random.Range(0, 100);
+            if (randInt >= 0 && randInt < 5)
+            {
+                GameObject newDialog = Instantiate(bugRandomText, newBug.transform);
+                newDialog.SetActive(true);
+                newDialog.transform.rotation = Quaternion.Euler(0f, 0f, -parentRot.z);
+                newDialog.transform.position = newBug.transform.position + new Vector3(-4.5f, 0.5f, 0f);
+                newDialog.GetComponentInChildren<TextMeshPro>().text = lines[randInt];
+            }
+        }
 
         SRC_Bug bugScript = newBug.GetComponent<SRC_Bug>();
         bugScript.bugSpawner = this;

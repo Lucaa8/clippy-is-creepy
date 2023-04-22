@@ -19,7 +19,10 @@ public class BulletExplosion : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SRC_Bug bugScript = collision.GetComponent<SRC_Bug>();
-        bugScript.RemoveBug();
-        script.addKill();
+        if(bugScript != null)
+        {
+            bugScript.RemoveBug();
+            script.addKill();
+        }
     }
 }
