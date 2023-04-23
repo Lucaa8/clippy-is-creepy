@@ -61,7 +61,7 @@ public class TrashTheBug : MonoBehaviour
                 shake = false;
                 spawner.spawn = false;
                 clippy = true;
-                clippyobject.GetComponentInChildren<TextMeshPro>().text = "WOW! Il y a beaucoup trop de bugs pour les supprimer!!<br>Je n'avais pas pr�vu cela...";
+                clippyobject.GetComponentInChildren<TextMeshPro>().text = "WOW! Il y a beaucoup trop de bugs pour les supprimer!!<br>Je n'avais pas prévu cela...";
             }
         }
     }

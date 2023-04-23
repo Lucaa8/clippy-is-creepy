@@ -802,7 +802,7 @@ MonoBehaviour:
   m_text: Dialog
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: 3620080686523311903, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
