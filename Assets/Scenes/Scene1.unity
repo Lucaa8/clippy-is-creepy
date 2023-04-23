@@ -248,7 +248,7 @@ MonoBehaviour:
   m_text: Clippy is creepy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
-  m_sharedMaterial: {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  m_sharedMaterial: {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -337,7 +337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3094946901484432048, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
+  - {fileID: -668632900415804580, guid: e6786c77e1c4fdd459e8527cc8e6770b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -523,6 +523,7 @@ GameObject:
   - component: {fileID: 802589956}
   - component: {fileID: 802589955}
   - component: {fileID: 802589954}
+  - component: {fileID: 802589957}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -596,6 +597,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802589957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802589953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56535d63a49bc4612b12bc05a195cb0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &939580586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,10 +1253,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1503244196268038706, guid: e5e39645af0e84786a607ddc15362017, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
+    - target: {fileID: 1503244196681585058, guid: e5e39645af0e84786a607ddc15362017, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 802589955}
     - target: {fileID: 1503244196681585062, guid: e5e39645af0e84786a607ddc15362017, type: 3}
       propertyPath: m_Name
       value: fade
